@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
   <meta charset=" UTF-8">
@@ -18,7 +18,32 @@
 
 <body>
   <main>
-    <h1>test</h1>
+    <h2>Metronome</h2>
+    <div class="container">
+        <div class="metronome">
+          <div class="bpmDisplay">
+            <span class="tempo">140</span>
+            <span class="bpm">BPM</span>
+          </div>
+
+          <div class="tempoText">Fast</div>
+          <div class="tempoSettings">
+            <div class="adjustTempoButton decreaseBPM">-</div>
+            <input type="range" min="20" max="280" step="1" class="slider">
+            <div class="adjustTempoButton increaseBPM">+</div>
+          </div>
+
+          <div class="startStop">START</div>
+          <div class="measures">
+            <div class="subBeat stepper">-</div>
+            <div class="measureCount">4</div>
+            <div class="addBeat stepper">+</div>
+          </div>
+          <span class="bpmText">Beats Per Measure</span>
+        </div>
+
+    </div>
+    <script src="./resources/app.js"></script>
   </main>
 </body>
 
