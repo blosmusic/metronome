@@ -1,4 +1,4 @@
-import Timer from '.timer.js'; //6.30 on metronome video
+import Timer from './timer.js';
 
 const tempoDisplay = document.querySelector('.tempo');
 const tempoText = document.querySelector('.tempoText');
@@ -106,13 +106,11 @@ function playClick() {
     click1.play();
     click1.currentTime = 0;
   } else {
-    click2.play();
-    click2.currentTime = 0;
+    click3.play();
+    click3.currentTime = 0;
   }
 
   count++;
 }
 
 const metronome = new Timer(playClick, 60000 / bpm, { immediate: true });
-
-metronome.start();
